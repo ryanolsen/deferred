@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	h1= title
+	h2 Scenario
+	p The UI require that saved screen can be removed. Once deleted, the UI should display a status message.
+
+	div#exContainer.race-condiction
+		div.exItem 
+			span Market Movers
+			a.remove(href='javascript:void(0);', data-remove='Market Movers') x
+		div.exItem 
+			span Value
+			a.remove(href='javascript:void(0);', data-remove='Value') x
+		div.exItem
+			span Growth
+			a.remove(href='javascript:void(0);', data-remove='Growth') x
+		div.exItem
+			span High Volume
+			a.remove(href='javascript:void(0);', data-remove='High Volume') x
+
+	h4 Click order
+	div#click-order
+	
+	h4 Response container
+	div#response
+
+	script(type='text/javascript')
+		$(document).ready(function(){
+			main.initDelete()
+		})

@@ -5,10 +5,34 @@ body {
 a {
   color: #00b7ff;
 }
+#exContainer {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+}
+.race-condiction .exItem span {
+  display: inline-block;
+  width: 200px;
+}
+#click-order,
+#response {
+  border: 1px solid #00f;
+  margin: 10px;
+  padding: 10px;
+}
+.flowers {
+  border: 1px solid #000;
+  height: 400px;
+  position: relative;
+}
 .flower {
+  background-color: #008000;
   -moz-transform: rotate(15deg);
   position: absolute;
-  display: none;
+  bottom: 0;
+/*display: none*/
+  height: 15px;
+  width: 15px;
 }
 .flower div {
   width: 40%;

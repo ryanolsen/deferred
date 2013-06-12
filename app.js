@@ -35,7 +35,24 @@ app.get('/', function(req, res) {
 
 app.get('/example-1', function(req, res) {
 	res.render('example-1.jade', {title:"Example 1"});
-})
+});
+
+app.get('/race-condition', function(req, res) {
+	res.render('race-condition.jade', {title:"Race Conditions"});
+});
+
+app.get('/cache', function(req, res) {
+	res.render('cache.jade', {title:"API Cache"});
+});
+
+app.get('/wait', function(req, res) {
+	console.log(req.query);
+	setTimeout(function() {
+		console.log('x');
+		res.send(req.query.name);
+	}, Number(req.query.wait));
+});
+
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
