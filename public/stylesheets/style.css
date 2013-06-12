@@ -5,3 +5,39 @@ body {
 a {
   color: #00b7ff;
 }
+.flower {
+  -moz-transform: rotate(15deg);
+  position: absolute;
+  display: none;
+}
+.flower div {
+  width: 40%;
+  height: 40%;
+  margin: 1px;
+  float: left;
+}
+.flower .center {
+  width: 20%;
+  height: 20%;
+  background: -moz-radial-gradient(#c0ab16, #ff3, #1e90ff);
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  border-radius: 50px;
+}
+.flower .tl {
+  background: -moz-linear-gradient(-45deg, #a09bfb 40%, #dbe2fb 90%);
+  border-radius: 30px 15px 0px 15px;
+}
+.flower .tr {
+  background: -moz-linear-gradient(225deg, #a09bfb 40%, #dbe2fb 90%);
+  border-radius: 15px 30px 15px 0px;
+}
+.flower .bl {
+  background: -moz-linear-gradient(45deg, #a09bfb 40%, #dbe2fb 90%);
+  border-radius: 15px 0px 15px 30px;
+}
+.flower .br {
+  background: -moz-linear-gradient(135deg, #a09bfb 40%, #dbe2fb 90%);
+  border-radius: 0px 15px 30px 15px;
+}
