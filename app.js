@@ -30,7 +30,15 @@ if ('development' == app.get('env')) {
 
 app.get('/', function(req, res) {
 	console.log(req, res);
-	res.render('index.jade', {title:'Home'});
+	res.render('index.jade', {title:'Understanding jQuery.Deferred and Promise'});
+});
+
+app.get('/basics', function(req, res) {
+	res.render('basics.jade', {});
+});
+
+app.get('/what-you-know', function(req, res) {
+	res.render('what-you-know.jade', {});
 });
 
 app.get('/example-1', function(req, res) {

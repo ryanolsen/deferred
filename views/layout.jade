@@ -2,9 +2,23 @@ doctype 5
 html
 	head
 		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		script(src='javascripts/jquery-1.9.1.min.js')
+		script(src='javascripts/bootstrap.min.js')
 		script(src='javascripts/main.js')
 	body
+		div.navbar.navbar-inverse.navbar-fixed-top.clearfix
+			div.navbar-inner
+				div.container
+					a.brand(href='/') Tech Focus
+					div.nav-collapse.collapse
+						ul.nav
+							li
+								a(href='/basics') Basics
+							li
+								a(href='/what-you-know') What you know
+							li
+								a(href='/cache') Cache
 		block content
 		

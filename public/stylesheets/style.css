@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+/*padding: 50px*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 a {
@@ -19,6 +19,25 @@ a {
   border: 1px solid #00f;
   margin: 10px;
   padding: 10px;
+}
+.jumbotron {
+  position: relative;
+  padding: 40px;
+  margin-bottom: 20px;
+  margin-top: 45px;
+  color: #fff;
+  height: 99%;
+  background: #020031;
+  background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #6d3353));
+  background: -webkit-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  background: -o-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  background: -ms-linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  background: linear-gradient(45deg, #020031 0%, #6d3353 100%);
+}
+.innertron {
+  width: 940px;
+  margin: 0 auto;
 }
 .flowers {
   border: 1px solid #000;

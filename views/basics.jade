@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	div.jumbotron
+		div.innertron
+			h1 The Basics
+
+	div.container
+		
+		blockquote 
+			p The deferred object has two important "event" methods.
+			ul
+				li resolve - Resovle a Deferred object and call any "done" callbacks with the given args
+				li reject - Reject a Deferred object and call any "fail" callbacks with the give args
+
+		blockquote 
+			p The deferred object has three important methods for attaching handers/callbacks
+			ul
+				li done - Add handlers to be called when the Deferred object is resolved
+				li fail - Add handlers to be called when the Deferred object is rejected
+				li always - What do you think?
+
+
+		div#zcode
+			div.hero-unit
+				<iframe width="100%" height="200" src="http://jsfiddle.net/EKK6E/85/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+				<iframe width="100%" height="250" src="http://jsfiddle.net/EKK6E/86/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+				p
+					span.label.label-info Heads up!
+					|	If you attach a callback to an already resolved deferred, it executes immediately
+
+				<iframe width="100%" height="200" src="http://jsfiddle.net/EKK6E/84/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
