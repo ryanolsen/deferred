@@ -41,6 +41,10 @@ app.get('/what-you-know', function(req, res) {
 	res.render('what-you-know.jade', {});
 });
 
+app.get('/then-when', function(req, res) {
+	res.render('then-when.jade');
+});
+
 app.get('/notify-progress', function(req, res) {
 	res.render('notify-progress.jade', {});
 });
