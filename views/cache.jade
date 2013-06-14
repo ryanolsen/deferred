@@ -1,20 +1,25 @@
 extends layout
 
 block content
-	h1= title
-	h2 Situation
-	p Your team is building a mobile application that uses a client-side rendering engine that requests data on a per-module bases. Each module loads data independently and may load data from a variety of APIs. Your task is to create a caching mechanism that prevents the app from requesting the same data twice.
+	div.jumbotron
+		div.innertron
+			h1= title
 
-	<iframe width="100%" height="300" src="http://jsfiddle.net/CSJhP/20/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+	div.container
+		h2 Situation
+		p Your team is building a mobile application that uses a client-side rendering engine that requests data on a per-module bases. Each module loads data independently and may load data from a variety of APIs. Your task is to create a caching mechanism that prevents the app from requesting the same data twice.
 
-	div#exContainer
+		<iframe width="100%" height="300" src="http://jsfiddle.net/CSJhP/20/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+		//
+			div#exContainer
 
-	h4 Response container
-	div#response
+			h4 Response container
+			div#response
 
-	script(type='text/javascript')
-		var myAPICache;
-		$(document).ready(function(){
-			main.initCache();
-		})
+			script(type='text/javascript')
+				var myAPICache;
+				$(document).ready(function(){
+					main.initCache();
+				})
+			
 		

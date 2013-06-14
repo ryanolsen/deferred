@@ -41,6 +41,10 @@ app.get('/what-you-know', function(req, res) {
 	res.render('what-you-know.jade', {});
 });
 
+app.get('/notify-progress', function(req, res) {
+	res.render('notify-progress.jade', {});
+});
+
 app.get('/example-1', function(req, res) {
 	res.render('example-1.jade', {title:"Example 1"});
 });
